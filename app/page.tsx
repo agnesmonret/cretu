@@ -1,4 +1,4 @@
-import { allWritings } from './contentlayer/generated';
+import { allWritings } from '.contentlayer/generated';
 import { cn } from '@/lib/className';
 import DateViewer from '@/ui/DateView';
 import ExternalLink from '@/ui/ExternalLink';
@@ -52,8 +52,8 @@ function Header() {
         </div>
       </div>
       <div className="flex flex-col">
-        <h1>Crețu</h1>
-        <p className="text-quaternary">Design, Engineer</p>
+        <h1>Cristian Crețu</h1>
+        <p className="text-quaternary">Design Engineer</p>
       </div>
     </div>
   );
@@ -70,18 +70,18 @@ function AboutMe() {
         </p>
         <p>
           Working on multiple projects and apps; formerly at{' '}
-          <ExternalLink arrow={false} href="http://example.com/">
-            Moon
+          <ExternalLink arrow={false} href="https://deta.space">
+            Deta
           </ExternalLink>{' '}
           developing the{' '}
-          <ExternalLink href="http://example.com/">
-            Tools for the Web
+          <ExternalLink href="https://deta.space/docs/en/learn/what-is-pc#content">
+            OS for the web
           </ExternalLink>{' '}
           , and at{' '}
-          <ExternalLink arrow={false} href="http://discord.tokenup.store">
-            TokenUp
+          <ExternalLink arrow={false} href="https://github.com/Landmarks-Tech">
+            Landmarks
           </ExternalLink>{' '}
-          creating a good service.
+          creating stunning web applications.
         </p>
         <p>
           Currently studying Computer Science at BBU. Ardent in reading,
@@ -152,31 +152,31 @@ function Contact() {
       <p className="text-tertiary">Links</p>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
         <ContactLink
-          href="https://X.com/"
+          href="https://X.com/cristicrtu"
           title="cristicrtu"
           website="X"
         />
         <ContactLink
-          href="https://github.com/"
+          href="https://github.com/cristicretu"
           title="cristicretu"
           website="GitHub"
         />
         <ContactLink
-          href="https://www.figma.com/"
+          href="https://www.figma.com/@cretu"
           title="cretu"
           website="Figma"
         />
         <ContactLink
-          href="https://layers.to/"
+          href="https://layers.to/cretu"
           title="cretu"
           website="Layers.to"
         />
         <ContactLink
-          email="admin[at]tokenup(dot)store"
-          title="admin[at]tokenup(dot)store"
+          email="hi[at]cretu(dot)dev"
+          title="hi[at]cretu(dot)dev"
           website="Email"
         />
-        <ContactLink href="https://discord.tokenup.store" title="cretu" website="Discord" />
+        <ContactLink href="https://read.cv/cretu" title="cretu" website="CV" />
       </div>
     </div>
   );
