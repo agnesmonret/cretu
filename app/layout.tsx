@@ -10,11 +10,11 @@ import { Inter } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  archives: ['https://old.cretu.dev'],
-  authors: [{ name: 'Cristian Crețu', url: 'https://cretu.dev' }],
+  archives: ['http://example.com/'],
+  authors: [{ name: 'Crețu', url: 'https://cretu.dev' }],
   category: 'design',
-  creator: 'Cristian Crețu',
-  description: 'Design Engineer.',
+  creator: 'Crețu',
+  description: 'Design, Engineer.',
   icons: {
     apple: '/static/favicons/apple-touch-icon-180x180.png',
     icon: '/static/favicons/favicon-196x196.png',
