@@ -128,4 +128,7 @@ async function RecentWritings() {
   );
 }
 
+
+
+
 // Ensure there's a newline at the end of the file
