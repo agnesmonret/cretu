@@ -31,6 +31,7 @@ export default function Home() {
       <Suspense>
         <RecentWritings />
       </Suspense>
+      <ContactLinks />
     </div>
   );
 }
@@ -128,7 +129,67 @@ async function RecentWritings() {
   );
 }
 
+function ContactLinks() {
+  return (
+    <div className="flex flex-col gap-4">
+      <p className="text-tertiary">Contact Links</p>
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+        <ContactLink
+          href="https://X.com/"
+          title="cristicrtu"
+          website="X"
+        />
+        <ContactLink
+          href="https://github.com/"
+          title="cristicretu"
+          website="GitHub"
+        />
+        <ContactLink
+          href="https://www.figma.com/"
+          title="cretu"
+          website="Figma"
+        />
+      </div>
+    </div>
+  );
+}
 
-
-
-// Ensure there's a newline at the end of the file
+function ContactLink({
+  href,
+  title,
+  website,
+}: {
+  href?: string;
+  title: string;
+  website?: string;
+}) {
+  return (
+    <span className="block items-center gap-4">
+      {website && <p className="text-quaternary">{website}</p>}
+      {href && (
+        <a
+          className="text-secondary hover:text-primary transition-opacity duration-150"
+          href={href}
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          {title}{' '}
+          <svg
+            className=" inline-block h-3 w-3"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth={1.5}
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        </a>
+      )}
+    </span>
+  );
+}
