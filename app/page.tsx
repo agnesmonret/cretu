@@ -127,3 +127,5 @@ async function RecentWritings() {
     </div>
   );
 }
+
+export {};
