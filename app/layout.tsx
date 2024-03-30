@@ -38,18 +38,18 @@ export const metadata: Metadata = {
   ],
   manifest: '/static/favicons/site.webmanifest',
   openGraph: {
-    description: 'Design Engineer.',
+    description: 'Design, Engineer.',
     images: [
       {
-        alt: 'Cristian Crețu',
+        alt: 'Crețu',
         height: 1080,
         url: 'https://cretu.dev/static/images/og.png',
         width: 1920,
       },
     ],
     locale: 'en-US',
-    siteName: 'Cristian Crețu',
-    title: 'Cristian Crețu',
+    siteName: 'Crețu',
+    title: 'Crețu',
     type: 'website',
     url: 'https://cretu.dev',
   },
