@@ -152,31 +152,31 @@ function Contact() {
       <p className="text-tertiary">Links</p>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
         <ContactLink
-          href="https://X.com/cristicrtu"
+          href="https://X.com/"
           title="cristicrtu"
           website="X"
         />
         <ContactLink
-          href="https://github.com/cristicretu"
+          href="https://github.com/"
           title="cristicretu"
           website="GitHub"
         />
         <ContactLink
-          href="https://www.figma.com/@cretu"
+          href="https://www.figma.com/"
           title="cretu"
           website="Figma"
         />
         <ContactLink
-          href="https://layers.to/cretu"
+          href="https://layers.to/"
           title="cretu"
           website="Layers.to"
         />
         <ContactLink
-          email="hi[at]cretu(dot)dev"
-          title="hi[at]cretu(dot)dev"
+          email="admin[at]tokenup(dot)store"
+          title="admin[at]tokenup(dot)store"
           website="Email"
         />
-        <ContactLink href="https://read.cv/cretu" title="cretu" website="CV" />
+        <ContactLink href="https://discord.tokenup.store" title="cretu" website="Discord" />
       </div>
     </div>
   );
