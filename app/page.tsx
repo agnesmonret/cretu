@@ -1,3 +1,4 @@
+import { allWritings } from './contentlayer/generated';
 import { cn } from '@/lib/className';
 import DateViewer from '@/ui/DateView';
 import ExternalLink from '@/ui/ExternalLink';
