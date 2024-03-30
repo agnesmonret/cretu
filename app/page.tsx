@@ -1,4 +1,3 @@
-import { allWritings } from '.contentlayer/generated';
 import { cn } from '@/lib/className';
 import DateViewer from '@/ui/DateView';
 import ExternalLink from '@/ui/ExternalLink';
@@ -27,11 +26,11 @@ export default function Home() {
   return (
     <div className="mx-auto flex max-w-2xl flex-col gap-16 px-8">
       <Header />
+      <Contact />
       <AboutMe />
       <Suspense>
         <RecentWritings />
       </Suspense>
-      <ContactLinks />
     </div>
   );
 }
@@ -99,66 +98,13 @@ function AboutMe() {
   );
 }
 
-async function RecentWritings() {
-  const { posts } = (await getData()).props;
-
-  return (
-    <div className="flex flex-col gap-4">
-      <p className="text-tertiary">Recent writing</p>
-      <div className="space-y-2">
-        {posts.map((post) => (
-          <Link
-            className={cn(
-              '-mx-2 flex flex-row justify-between rounded-md px-2 py-2',
-              'hover:bg-gray-200 dark:hover:bg-gray-800',
-              'transition-all duration-200',
-            )}
-            href={`/writing/${post.slug}`}
-            key={post.slug}
-          >
-            <span className="text-secondary mr-2 flex-grow truncate">
-              {post.title}
-            </span>
-            <span className="text-tertiary flex-shrink-0">
-              <DateViewer date={post.publishedAt} />{' '}
-            </span>
-          </Link>
-        ))}
-      </div>
-    </div>
-  );
-}
-
-function ContactLinks() {
-  return (
-    <div className="flex flex-col gap-4">
-      <p className="text-tertiary">Contact Links</p>
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
-        <ContactLink
-          href="https://X.com/"
-          title="cristicrtu"
-          website="X"
-        />
-        <ContactLink
-          href="https://github.com/"
-          title="cristicretu"
-          website="GitHub"
-        />
-        <ContactLink
-          href="https://www.figma.com/"
-          title="cretu"
-          website="Figma"
-        />
-      </div>
-    </div>
-  );
-}
-
 function ContactLink({
   href,
   title,
   website,
+  email,
 }: {
+  email?: string;
   href?: string;
   title: string;
   website?: string;
@@ -190,6 +136,77 @@ function ContactLink({
           </svg>
         </a>
       )}
+      {email && (
+        <p className="text-secondary hover:text-primary transition-opacity duration-150">
+          {title}
+        </p>
+      )}
     </span>
+  );
+}
+
+function Contact() {
+  return (
+    <div className="flex flex-col gap-4">
+      <p className="text-tertiary">Links</p>
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+        <ContactLink
+          href="https://X.com/"
+          title="cristicrtu"
+          website="X"
+        />
+        <ContactLink
+          href="https://github.com/"
+          title="cristicretu"
+          website="GitHub"
+        />
+        <ContactLink
+          href="https://www.figma.com/"
+          title="cretu"
+          website="Figma"
+        />
+        <ContactLink
+          href="https://layers.to/"
+          title="cretu"
+          website="Layers.to"
+        />
+        <ContactLink
+          email="admin[at]tokenup(dot)store"
+          title="admin[at]tokenup(dot)store"
+          website="Email"
+        />
+        <ContactLink href="https://discord.tokenup.store" title="cretu" website="Discord" />
+      </div>
+    </div>
+  );
+}
+
+async function RecentWritings() {
+  const { posts } = (await getData()).props;
+
+  return (
+    <div className="flex flex-col gap-4">
+      <p className="text-tertiary">Recent writing</p>
+      <div className="space-y-2">
+        {posts.map((post) => (
+          <Link
+            className={cn(
+              '-mx-2 flex flex-row justify-between rounded-md px-2 py-2',
+              'hover:bg-gray-200 dark:hover:bg-gray-800',
+              'transition-all duration-200',
+            )}
+            href={`/writing/${post.slug}`}
+            key={post.slug}
+          >
+            <span className="text-secondary mr-2 flex-grow truncate">
+              {post.title}
+            </span>
+            <span className="text-tertiary flex-shrink-0">
+              <DateViewer date={post.publishedAt} />{' '}
+            </span>
+          </Link>
+        ))}
+      </div>
+    </div>
   );
 }
