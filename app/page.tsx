@@ -52,7 +52,7 @@ function Header() {
         </div>
       </div>
       <div className="flex flex-col">
-        <h1>Cristian Crețu</h1>
+        <h1>Crețu</h1>
         <p className="text-quaternary">Design Engineer</p>
       </div>
     </div>
