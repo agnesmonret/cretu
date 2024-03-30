@@ -128,4 +128,4 @@ async function RecentWritings() {
   );
 }
 
-export {};
+// Ensure there's a newline at the end of the file
