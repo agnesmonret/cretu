@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   archives: ['http://example.com/'],
-  authors: [{ name: 'Crețu', url: 'https://cretu.dev' }],
+  authors: [{ name: 'Crețu', url: 'https://cretudev.xyz' }],
   category: 'design',
   creator: 'Crețu',
   description: 'Design, Engineer.',
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
       {
         alt: 'Crețu',
         height: 1080,
-        url: 'https://cretu.dev/static/images/og.png',
+        url: 'https://cretudev.xyz/static/images/og.png',
         width: 1920,
       },
     ],
@@ -51,9 +51,9 @@ export const metadata: Metadata = {
     siteName: 'Crețu',
     title: 'Crețu',
     type: 'website',
-    url: 'https://cretu.dev',
+    url: 'https://cretudev.xyz',
   },
-  publisher: 'Cristian Crețu',
+  publisher: 'Crețu',
   robots: {
     follow: true,
     googleBot: {
@@ -66,13 +66,13 @@ export const metadata: Metadata = {
     index: true,
   },
   title: {
-    default: 'Cristian Crețu',
-    template: '%s | Cristian Crețu',
+    default: 'Crețu',
+    template: '%s | Crețu',
   },
   twitter: {
     card: 'summary_large_image',
     site: '@cristicrtu',
-    title: 'Cristian Crețu',
+    title: 'Crețu',
   },
   verification: {
     google: 'fK4YqLAHjoaynXLF1e5gaPzDNOircgiYSgAwSXqr61o',
