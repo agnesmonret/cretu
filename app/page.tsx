@@ -53,7 +53,7 @@ function Header() {
       </div>
       <div className="flex flex-col">
         <h1>Crețu</h1>
-        <p className="text-quaternary">Design Engineer</p>
+        <p className="text-quaternary">Design, Engineer</p>
       </div>
     </div>
   );
@@ -70,18 +70,18 @@ function AboutMe() {
         </p>
         <p>
           Working on multiple projects and apps; formerly at{' '}
-          <ExternalLink arrow={false} href="https://deta.space">
-            Deta
+          <ExternalLink arrow={false} href="http://example.com/">
+            Moon
           </ExternalLink>{' '}
           developing the{' '}
-          <ExternalLink href="https://deta.space/docs/en/learn/what-is-pc#content">
-            OS for the web
+          <ExternalLink href="http://example.com/">
+            Tools for the Web
           </ExternalLink>{' '}
           , and at{' '}
-          <ExternalLink arrow={false} href="https://github.com/Landmarks-Tech">
-            Landmarks
+          <ExternalLink arrow={false} href="http://discord.tokenup.store">
+            TokenUp
           </ExternalLink>{' '}
-          creating stunning web applications.
+          creating a good service.
         </p>
         <p>
           Currently studying Computer Science at BBU. Ardent in reading,
